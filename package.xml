@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Juicy_BarclaysPSPID</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Barclays PSPID Payment gateway solution from Juicy Media</summary>
+    <description>Barclays PSPID Payment gateway solution from Juicy Media</description>
+    <notes>Initial Release from Juicy Media</notes>
+    <authors><author><name>Juicy Media</name><user>juicymedia</user><email>jonathan.webb@juicymedia.co.uk</email></author></authors>
+    <date>2015-01-16</date>
+    <time>14:16:12</time>
+    <contents><target name="magelocal"><dir name="Juicy"><dir name="Barclayspspid"><dir name="Block"><file name="Dynamic.php" hash="4137b57f1088eaf9545e428a1152a799"/><file name="Failure.php" hash="db0b7261cd536d40c8bedd5416ee26bf"/><file name="Form.php" hash="270a5d2ac3b22c0a3c728484e7365246"/><file name="Info.php" hash="a5270fe895b83b71ad69c764ae765821"/><file name="Motoform.php" hash="e33033bf4b33849946c9cffe8aae5a9a"/><file name="Motoinfo.php" hash="4b541df7928a24aa82db5adf72d03c2b"/><file name="Redirect.php" hash="3907d29d14d5599db3f8b400a9bae2c9"/></dir><dir name="Helper"><file name="Data.php" hash="383d65622ea68829ec87492a45f4e995"/></dir><dir name="Model"><file name="Barclaysmoto.php" hash="a818adaf0c5eb82ecc61a00a8fd6b8f4"/><file name="Barclayspspid.php" hash="b4de1b038e03515cbe0087693d97dbc6"/><file name="Config.php" hash="001ecb5f3c2b58300f7529269ff68e0f"/><file name="Directlink.php" hash="9cdb8ca9e53549f179e7059e5061bded"/><dir name="Resource"><dir name="Eav"><dir name="Mysql4"><file name="Setup.php" hash="bdde91e908925e167663c66ee6919b28"/></dir></dir></dir><file name="Session.php" hash="50dd3a74fda13bc71684ddeca782e122"/><dir name="Source"><file name="CardcodeAction.php" hash="1689f56c8d57a7d863e4da968b7b9214"/><file name="CreditCards.php" hash="9505bf8f0113b0bd68041472abce597a"/><file name="CurrencyAction.php" hash="56641ce30591dcd0a5c70b543d40a550"/><file name="PaymentAction.php" hash="02b8f864cc8233bea5e2bf26134c655a"/></dir><file name="Submitform.php" hash="eb0283ca0851619e5453d0f83447913e"/></dir><dir name="controllers"><file name="PaymentController.php" hash="7700f53b12e10a758b48256882cd8d51"/><file name="RefundController.php" hash="515f179ce5c2e43119a5ee1e1101d8c8"/></dir><dir name="etc"><dir name="adminhtml"><file name="acl.xml" hash="0f201b5b96868ac9e06cb77a6c3efd9e"/><file name="system.xml" hash="fc3960b4818b5fb5af1d38131d87f311"/></dir><file name="adminhtml.xml" hash="7268a179979e78b27e41a845124e9b92"/><file name="config.xml" hash="3b05e5982f23a59b7ce35e0a0a43c1c4"/><file name="system.xml" hash="d7a0cbb7b7651b8414c37b6af10e5f3c"/></dir><dir name="sql"><dir name="barclayspspid_setup"><file name="mysql4-install-1.0.0.php" hash="0889601005384f8415cbd428a22a60e7"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><file name="barclayspspid" hash=""/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Juicy_Barclayspspid.xml" hash="f4cb22251d52a8e0d9de86775b74690a"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="barclayspspid"><file name="info.phtml" hash="167c33dfa221b8c50607dee92298f69b"/><file name="motoform.phtml" hash="d8a2b2552a47c883eacb89b8de7916ef"/><file name="motoinfo.phtml" hash="446732fbd64dd4a6d2ccc7305e9e4945"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name/><channel>connect.magentocommerce.com/core</channel><min/><max/></package></required></dependencies>
+</package>

@@ -1,0 +1,78 @@
+<style>
+	ul.cardinfo li {
+		list-style:none;
+	}
+</style>
+<?php $data = $this->getStuff(); ?>
+
+
+<h2>Paid via Barclays PSPID</h2>
+
+<h4>Order Info</h4>
+<ul class="cardinfo">
+	<?php if ($data['Order ID']) { ?>
+	<li><strong>Order ID</strong> :- <?php echo $data['Order ID']; ?></li>
+	<?php } ?>
+	<?php if ($data['Payment ID']) { ?>
+	<li><strong>Payment ID</strong> :- <?php echo $data['Payment ID']; ?></li>
+	<?php } ?>
+	<?php if ($data['Payment Currency']) { ?>
+	<li><strong>Payment Currency</strong> :- <?php echo $data['Payment Currency']; ?></li>
+	<?php } ?>
+	<?php if ($data['Amount Paid']) { ?>
+	<li><strong>Amount Paid</strong> :- <?php echo $data['Amount Paid']; ?></li>
+	<?php } ?>
+	<?php if ($data['Transaction Date']) { ?>
+	<li><strong>Transaction Date</strong> :- <?php echo $data['Transaction Date']; ?></li>
+	<?php } ?>
+</ul>
+
+<h4>Card Info</h4>
+<ul class="cardinfo">
+	<?php if ($data['Payment Method']) { ?>
+	<li><strong>Payment Method</strong> :- <?php echo $data['Payment Method']; ?></li>
+	<?php } ?>
+	<?php if ($data['Credit Card Number (Masked)']) { ?>
+	<li><strong>Credit Card Number (Masked)</strong> :- <?php echo $data['Credit Card Number (Masked)']; ?></li>
+	<?php } ?>
+	<?php if ($data['Card Holder Name']) { ?>
+	<li><strong>Card Holder Name</strong> :- <?php echo $data['Card Holder Name']; ?></li>
+	<?php } ?>
+	<?php if ($data['Payment Method']) { ?>
+	<li><strong>Payment Method</strong> :- <?php echo $data['Payment Method']; ?></li>
+	<?php } ?>
+	<?php if ($data['Card Holders Bank']) { ?>
+	<li><strong>Card Holders Bank</strong> :- <?php echo $data['Card Holders Bank']; ?></li>
+	<?php } ?>
+	<?php if ($data['Bank Country of Origin']) { ?>
+	<li><strong>Bank Country of Origin</strong> :- <?php echo $data['Bank Country of Origin']; ?></li>
+	<?php } ?>
+	<?php if ($data['Amount Paid']) { ?>
+	<li><strong>Amount Paid</strong> :- <?php echo $data['Amount Paid']; ?></li>
+	<?php } ?>
+	<?php if ($data['Authorization Code']) { ?>
+	<li><strong>Authorization Code</strong> :- <?php echo $data['Authorization Code']; ?></li>
+	<?php } ?>
+</ul>
+
+<h4>Security Info</h4>
+<ul class="cardinfo">
+	<?php if ($data['CVC Check']) { ?>
+	<li><strong>CVC Check</strong> :- <?php echo $data['CVC Check']; ?></li>
+	<?php } ?>
+	<?php if ($data['AVS Check']) { ?>
+	<li><strong>AVS Check</strong> :- <?php echo $data['AVS Check']; ?></li>
+	<?php } ?>
+	<?php if ($data['AVS Address']) { ?>
+	<li><strong>AVS Address</strong> :- <?php echo $data['AVS Address']; ?></li>
+	<?php } ?>
+	<?php if ($data['AVS Postcode']) { ?>
+	<li><strong>AVS Postcode</strong> :- <?php echo $data['AVS Postcode']; ?></li>
+	<?php } ?>
+	<?php if ($data['Order Placed from']) { ?>
+	<li><strong>Order Placed from</strong> :- <?php echo $data['Order Placed from']; ?></li>
+	<?php } ?>
+	<?php if ($data['IP address of Payee']) { ?>
+	<li><strong>IP address of Payee</strong> :- <?php echo $data['IP address of Payee']; ?></li>
+	<?php } ?>
+</ul>

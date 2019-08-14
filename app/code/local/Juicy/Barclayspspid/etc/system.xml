@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <juicy translate="label" module="barclayspspid">
+            <label>Juicy Media</label>
+            <sort_order>10</sort_order>
+        </juicy>        
+    </tabs>   
+   <sections>       
+        <payment>
+            <groups>
+            	<barclayspspid_moto translate="label" module="barclayspspid">
+                <label>Barclays PSPID Moto by Juicy Media Ltd</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>					
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <payment_action translate="label">
+                            <label>Payment Action</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>paygate/authorizenet_source_paymentAction</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </payment_action>
+                     </fields>
+                </barclayspspid_moto>            
+            
+                
+                <barclayspspid_standard translate="label" module="barclayspspid">
+                    <label>Barclays PSPID by Juicy Media Ltd</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>					
+                    <fields>	
+                        <head_init translate="label">
+                            <label>Initial</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <sort_order>0</sort_order>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                                                        
+                        </head_init>                        	
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>                    		
+                        </active>                       
+                        <testmode translate="label">
+                            <label>Test Mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </testmode>
+                        
+                        <head_req translate="label">
+                            <label>Required</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <sort_order>10</sort_order>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                                                        
+                        </head_req>                                                
+                        <pspid translate="label">
+                            <label>PSPID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pspid>                        
+                        <username translate="label comment">
+                            <label>User Name</label>
+                            <frontend_type>text</frontend_type>
+                            <comment></comment>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </username>
+                        <userpassword translate="label comment">
+                            <label>User Password</label>
+                            <frontend_type>obscure</frontend_type>
+                            <comment></comment>
+                            <sort_order>32</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </userpassword>                        
+                        <shain translate="label">
+                            <label>SHA-IN</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>33</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shain>                        
+                        <shaout translate="label">
+                            <label>SHA-OUT</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>34</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shaout>                                  
+                        <cardtypes translate="label">
+                            <label>Card Types</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>Juicy_Barclayspspid_Model_Source_CreditCards</source_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cardtypes>          
+                        <currency translate="label">
+                            <label>Currency</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Juicy_Barclayspspid_Model_Source_CurrencyAction</source_model>
+                            <sort_order>36</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </currency> 
+                        
+                        <head_styles translate="label">
+                            <label>Styles</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <sort_order>39</sort_order>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                                                        
+                        </head_styles> 
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>                                    
+                        <pagetitle translate="label">
+                            <label>Page Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pagetitle>                                                     
+                        <dynamic translate="label">
+                            <label>Send Dynamic Template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </dynamic>                                      
+                        <dynamictemplate translate="label">
+                            <label>Dynamic Template</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>95</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>1</dynamic></depends>
+                        </dynamictemplate>                        
+                        <bgcolor translate="label">
+                            <label>Background Colour</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>95</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </bgcolor>                        
+                        <txtcolor translate="label">
+                            <label>Text Colour</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </txtcolor>                        
+                        <tblbgcolor translate="label">
+                            <label>Table Background Colour</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </tblbgcolor>                        
+                        <tbltxtcolor translate="label">
+                            <label>Table Text Colour</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </tbltxtcolor>                        
+                        <buttonbgcolor translate="label">
+                            <label>Button Background Colour</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </buttonbgcolor>                        
+                        <buttontxtcolor translate="label">
+                            <label>Button Text Colour</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </buttontxtcolor>                        
+                        <logo translate="label">
+                            <label>Logo URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </logo>                        
+                        <fonttype translate="label">
+                            <label>Font Type</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><dynamic>0</dynamic></depends>
+                        </fonttype>                        
+                        <magheader translate="label">
+                            <label>Include Magento Theme</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>165</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </magheader>                        
+                        
+                        <head_additional translate="label">
+                            <label>Additional</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <sort_order>168</sort_order>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                                                        
+                        </head_additional>
+                        <paymentaction translate="label">
+                            <label>Authorisation Mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Juicy_Barclayspspid_Model_Source_PaymentAction</source_model>
+                            <sort_order>169</sort_order>
+                            <show_in_default>2</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </paymentaction>          
+                        <basket translate="label">
+                            <label>Send Basket Info</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </basket>                        
+                        <delivery translate="label">
+                            <label>Send Delivery Info</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </delivery>          
+                        <allowspecific translate="label">
+                            <label>Payment from Applicable Countries</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>240</sort_order>
+                            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </allowspecific>                        
+                        <specificcountry translate="label">
+                            <label>Payment from Specific Countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>250</sort_order>
+                            <source_model>adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><allowspecific>1</allowspecific></depends>
+                        </specificcountry>                        
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>260</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
+                        
+                        <head_debug translate="label">
+                            <label>Debug</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <sort_order>265</sort_order>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>                                                        
+                        </head_debug>                                
+                        <debuglog translate="label">
+                            <label>Activate Debug Logging</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>270</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </debuglog>                        
+                        <debugemail translate="label">
+                            <label>Send Debug Email to Developers</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>280</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><debuglog>1</debuglog></depends>
+                        </debugemail> 
+                    </fields>
+                </barclayspspid_standard>
+            </groups>
+        </payment>
+    </sections> 
+</config>

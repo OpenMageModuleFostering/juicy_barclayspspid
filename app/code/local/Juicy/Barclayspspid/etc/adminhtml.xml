@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<config>
+    <menu>
+        <juicy>
+            <title>Juicy Media</title>
+            <sort_order>72</sort_order>
+            <children>
+                <barclayspspid module="barclayspspid">
+                    <title>Barclays PSPID</title>
+                    <sort_order>3</sort_order>
+                    <children>
+                        <barclayspspid_manager module="barclayspspid">
+                            <title>Payment Gateway Manager</title>
+                            <sort_order>0</sort_order>
+                            <action>adminhtml/system_config/edit/section/payment</action>
+                        </barclayspspid_manager>
+                    </children>
+                </barclayspspid>
+            </children>
+        </juicy>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <barclayspspid module="barclayspspid">
+                                        <title>Barclays PSPID Config</title>
+                                        <sort_order>99</sort_order>
+                                    </barclayspspid>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>   
+    </acl>
+</config>
+

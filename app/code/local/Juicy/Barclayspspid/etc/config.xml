@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+
+<config>
+    <modules>
+        <Juicy_Barclayspspid>
+            <version>1.0.0</version>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Juicy_Barclayspspid>
+    </modules>
+    <global>
+    	<resources>
+            <barclayspspid_setup>
+                <setup>
+                    <module>Juicy_Barclayspspid</module>
+                    <class>Juicy_Barclayspspid_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </barclayspspid_setup>
+        </resources>
+        <payment>
+            <groups>
+                <barclayspspid>Juicy Media Barclays PSPID</barclayspspid>
+            </groups>
+        </payment>
+        <helpers>
+            <barclayspspid>
+                <class>Juicy_Barclayspspid_Helper</class>
+            </barclayspspid>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <barclayspspid>
+                <use>standard</use>
+                <args>
+                    <module>Juicy_Barclayspspid</module>
+                    <frontName>barclayspspid</frontName>
+                </args>
+            </barclayspspid>  
+        </routers>        
+        <layout>
+            <updates>
+                <barclayspspid module="Juicy_Barclayspspid">
+                    <file>layout.xml</file>
+                </barclayspspid>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+         <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <barclayspspid after="Mage_Adminhtml">Juicy_Barclayspspid</barclayspspid>
+                    </modules>
+                </args>
+            </adminhtml>  
+        </routers> 
+    </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Juicy_Barclayspspid>
+                    <files>
+                        <default>Juicy_Barclayspspid.csv</default>
+                    </files>
+                </Juicy_Barclayspspid>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <barclayspspid module="Juicy_Barclayspspid">
+                    <file>layout.xml</file>
+                </barclayspspid>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
+        <payment>
+            <barclayspspid_standard>
+                <group>barclayspspid_standard</group>
+                <model>Juicy_Barclayspspid_Model_Barclayspspid</model>
+                <title>Barclays PSPID</title>
+                <active>0</active>
+                <testmode>0</testmode>   
+                
+                <title>Credit/Debit Card (Powered by Barclays)</title>
+                <pagetitle>Credit/Debit Card Payment</pagetitle>
+                <dynamic>1</dynamic>
+                <dynamictemplate>$$$PAYMENT ZONE$$$</dynamictemplate>
+                <bgcolor>#fff</bgcolor>
+                <txtcolor>#000</txtcolor>
+                <tblbgcolor>#fff</tblbgcolor>
+                <tbltxtcolor>#000</tbltxtcolor>
+                <buttonbgcolor>#000</buttonbgcolor>
+                <buttontxtcolor>#fff</buttontxtcolor>
+                <logo></logo>
+                <fonttype>initial</fonttype> 
+                
+                <basket>1</basket>
+                <delivery>1</delivery>
+                <magheader>1</magheader>
+                <allowspecific>0</allowspecific> 
+                
+                <debuglog>1</debuglog>
+                <debugemail>1</debugemail>     
+            </barclayspspid_standard>
+            <barclayspspid_moto>
+                <group>barclayspspid_moto</group>
+                <active>1</active>
+                <payment_action>authorize</payment_action>
+                <model>Juicy_Barclayspspid_Model_Barclaysmoto</model>
+                <title>Barclays PSPID Moto</title>
+                <allowspecific>0</allowspecific>
+            </barclayspspid_moto>
+        </payment>        
+    </default>
+</config>

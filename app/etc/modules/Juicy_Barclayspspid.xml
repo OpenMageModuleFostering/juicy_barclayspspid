@@ -1,0 +1,9 @@
+<config>
+    <modules>
+        <Juicy_Barclayspspid>
+            <version>1.0.0.0</version>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Juicy_Barclayspspid>
+    </modules>
+ </config>

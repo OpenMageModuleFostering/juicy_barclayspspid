@@ -1,0 +1,97 @@
+<?php $data = $this->getStuff(); ?>
+
+<h3>Order Info</h3>
+<table cellspacing="0" class="form-list">
+<tbody>
+<tr>
+    <td class="label"><label>Magento Order ID</label></td>
+    <td class="value"><?php if (isset($data['Order ID'])) { ?><?php echo $data['Order ID']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Payment ID</label></td>
+    <td class="value"><?php if (isset($data['Payment ID'])) { ?><?php echo $data['Payment ID']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Payment Currency</label></td>
+    <td class="value"><?php if (isset($data['Payment Currency'])) { ?><?php echo $data['Payment Currency']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Amount Paid</label></td>
+    <td class="value"><?php if (isset($data['Amount Paid'])) { ?><?php echo $data['Amount Paid']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Transaction Date</label></td>
+    <td class="value"><?php if (isset($data['Transaction Date'])) { ?><?php echo $data['Transaction Date']; ?><?php } ?></td>
+</tr>
+</tbody>
+</table>
+                                                
+                                                
+<h3>Payment Info</h3>
+<table cellspacing="0" class="form-list">
+<tbody>
+<tr>
+    <td class="label"><label>Payment Method</label></td>
+    <td class="value"><?php if (isset($data['Payment Method'])) { ?><?php echo $data['Payment Method']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Credit Card Number (Masked)</label></td>
+    <td class="value"><?php if (isset($data['Credit Card Number (Masked)'])) { ?><?php echo $data['Credit Card Number (Masked)']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Card Holder Name</label></td>
+    <td class="value"><?php if (isset($data['Card Holder Name'])) { ?><?php echo $data['Card Holder Name']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Card Holders Bank</label></td>
+    <td class="value"><?php if (isset($data['Card Holders Bank'])) { ?><?php echo $data['Card Holders Bank']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Bank Country of Origin</label></td>
+    <td class="value"><?php if (isset($data['Bank Country of Origin'])) { ?><?php echo $data['Bank Country of Origin']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Amount Paid</label></td>
+    <td class="value"><?php if (isset($data['Amount Paid'])) { ?><?php echo $data['Amount Paid']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Authorization Code</label></td>
+    <td class="value"><?php if (isset($data['Authorization Code'])) { ?><?php echo $data['Authorization Code']; ?><?php } ?></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<h3>Security Info</h3>
+<table cellspacing="0" class="form-list">
+<tbody>
+<tr>
+    <td class="label"><label>CVC Check</label></td>
+    <td class="value"><?php if (isset($data['CVC Check'])) { ?><?php echo $data['CVC Check']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>AVS Check</label></td>
+    <td class="value"><?php if (isset($data['AVS Check'])) { ?><?php echo $data['AVS Check']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>AVS Address</label></td>
+    <td class="value"><?php if (isset($data['AVS Address'])) { ?><?php echo $data['AVS Address']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>AVS Postcode</label></td>
+    <td class="value"><?php if (isset($data['AVS Postcode'])) { ?><?php echo $data['AVS Postcode']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>Order Placed from</label></td>
+    <td class="value"><?php if (isset($data['Order Placed from'])) { ?><?php echo $data['Order Placed from']; ?><?php } ?></td>
+</tr>
+<tr>
+    <td class="label"><label>IP address of Payee</label></td>
+    <td class="value"><?php if (isset($data['IP address of Payee'])) { ?><?php echo $data['IP address of Payee']; ?><?php } ?></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Currency</h3>
+	

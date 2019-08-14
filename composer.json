@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Juicy_BarclaysPSPID",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Barclays PSPID Payment gateway solution from Juicy Media",
+    "authors": [
+    {
+        "name": "Juicy Media",
+        "email": "jonathan.webb@juicymedia.co.uk"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
