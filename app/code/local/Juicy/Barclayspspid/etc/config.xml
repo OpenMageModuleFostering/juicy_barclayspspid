@@ -106,8 +106,8 @@
                 <magheader>1</magheader>
                 <allowspecific>0</allowspecific> 
                 
-                <debuglog>1</debuglog>
-                <debugemail>1</debugemail>     
+                <debuglog>0</debuglog>
+                <debugemail>0</debugemail>     
             </barclayspspid_standard>
             <barclayspspid_moto>
                 <group>barclayspspid_moto</group>

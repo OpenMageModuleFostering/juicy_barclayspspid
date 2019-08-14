@@ -47,7 +47,7 @@ class Juicy_Barclayspspid_Helper_Data extends Mage_Core_Helper_Abstract
 			$mail->setType('html');// YOu can use Html or text as Mail format
 				
 			try {
-				$mail->send();
+			//REMOVE MAIL SEND	$mail->send();
 			}
 			catch (Exception $e) {
 				//var_dump($e>getMessage());

@@ -329,7 +329,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </sort_order>
-                        
+                        <!--
                         <head_debug translate="label">
                             <label>Debug</label>
                             <frontend_type>text</frontend_type>
@@ -357,6 +357,7 @@
                             <show_in_store>0</show_in_store>
                             <depends><debuglog>1</debuglog></depends>
                         </debugemail> 
+                        -->
                     </fields>
                 </barclayspspid_standard>
             </groups>
